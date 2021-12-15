@@ -1,2 +1,1 @@
-# Old-SF
-Repo Dev Old - Solar Fertigation 
+# Repo Dev Old SolarFertigation 
