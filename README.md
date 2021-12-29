@@ -9,8 +9,8 @@
 
 > SSH Connection
 ```
-ssh pi@192.168.1.2
-password: raspberry
+ssh <yourhostmane>@<youripaddress>
+default hostname: pi | password: raspberry
 ```
 > Install RealVNC Server/Viewer
 ```
