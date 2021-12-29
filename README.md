@@ -4,7 +4,8 @@
 - [Download RaspyOS] (https://www.raspberrypi.com/software/operating-systems/)
 - [Upload OS in SD Card] (https://www.balena.io/etcher/)
 
-- Upload in SD Card file SSH & wpa_supplicant.conf
+- Upload in SD Card file "ssh" & "wpa_supplicant.conf" to enable SSH Protocol and Wi-Fi Connection
+- Install and Follow OS Wizard via HDMI
 - Find in your network IP Raspy Address (https://angryip.org)
 
 > SSH Connection
