@@ -1,0 +1,23 @@
+[
+  {
+    "uid": "test_buttons",
+    "append": true,
+    "watch": false,
+    "script": "zonesprocessor.js",
+    "sourceDir": "/home/pi/newsfirmware/manualtest/"
+  },
+  {
+    "uid": "schedule",
+    "append": true,
+    "watch": false,
+    "script": "schedule_master.js",
+    "sourceDir": "/home/pi/newsfirmware/scheduling/"
+  },
+  {
+    "uid": "clean_routine",
+    "append": true,
+    "watch": true,
+    "script": "clean_routine.js",
+    "sourceDir": "/home/pi/newsfirmware/clean/"
+  }
+]

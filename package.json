@@ -1,0 +1,45 @@
+{
+  "name": "raspi_code",
+  "version": "1.0.0",
+  "description": "code to run on raspberry pi, the receiver of SF_System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://solarfertigation.visualstudio.com/_git/Raspi_code"
+  },
+  "keywords": [
+    "raspberry",
+    "receiver"
+  ],
+  "author": "Gianluca Valecce",
+  "license": "ISC",
+  "dependencies": {
+    "array-includes": "latest",
+    "compute-median": "latest",
+    "dotenv": "^8.2.0",
+    "express": "latest",
+    "forever": "latest",
+    "fs": "latest",
+    "http": "latest",
+    "kelvin-to-celsius": "latest",
+    "macaddress": "^0.2.9",
+    "md5": "^2.2.1",
+    "moment": "latest",
+    "mongoose": "latest",
+    "mqtt": "latest",
+    "node-gyp": "^6.1.0",
+    "node-schedule": "latest",
+    "onesignal-node": "latest",
+    "onoff": "latest",
+    "pigpio": "^3.2.3",
+    "random-date-generator": "latest",
+    "random-number-generator": "latest",
+    "shortid": "latest",
+    "sqlite3": "^5.0.0",
+    "time-stamp": "latest",
+    "uuid": "latest"
+  }
+}
