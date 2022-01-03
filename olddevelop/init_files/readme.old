@@ -1,0 +1,29 @@
+# Scheduling events for Solarfertigation
+
+
+### Prerequisites
+1. Install [Node.js](https://nodejs.org)
+2. `git clone https://solarfertigation.visualstudio.com/Raspi_code/_git/Raspi_code`
+3. From project root folder install all the package.json dependencies: 
+```
+npm i
+```
+ 
+- In case of compiling failure of `sqlite3`, specify 
+
+```
+npm install sqlite3 --build-from-source
+```
+
+and then 
+
+```
+CXX=clang++ npm i
+```
+
+### Notes
+- `onoff` package only for raspberry pi system
+
+
+NB!!!!
+RIGUARDO LE DATE IN SCHEDULE NODE I MESI PARTONO DA 0 !!!
