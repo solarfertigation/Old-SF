@@ -3,7 +3,7 @@ Description=solarfertigation Service
 After=multi-user.target
 
 [Service]
-WorkingDirectory=/home/pi/newnewsfirmware/init_files
+WorkingDirectory=/home/pi/sf-old/olddevelop/init_files
 Type=forking
 ExecStart=/bin/bash foreverStartup.sh 
 User=pi
