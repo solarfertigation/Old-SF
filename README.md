@@ -36,3 +36,17 @@ sudo raspi-config
 ```
 hostname -I
 ```
+In caso di problemi nella connessione SSH
+> SSH Re-Build Key
+```
+ssh-keygen -R "hostname/ip"
+```
+
+> Creazione nuovi utenti Raspberry
+```
+sudo adduser <nomeutente>
+```
+> Cancellazione utenti Raspberry
+```
+sudo userdel-r <nomeutente>
+```
