@@ -60,9 +60,9 @@ sudo cp -r pathorigin pathdestination
 ```
 > Cancellare una dir 
 ```
-sudo rm -mf -r pathorigin pathdestination 
+sudo rm -rf  pathorigin pathdestination 
 ```
 > Rinominare dir e file
 ```
-sudo mv  pathorigin/nomefile pathdestination/nomeifle
+sudo mv  pathorigin/nomefile pathdestination/nomefile
 ```
