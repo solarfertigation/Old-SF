@@ -21,9 +21,14 @@ sudo apt-get install realvnc-vnc-server
 sudo apt-get install realvnc-vnc-viewer
 ```
 
-> Install Dataplicity
+> Install Remote.it
 ```
-curl -s https://www.dataplicity.com/imu0b7c3.py | sudo python
+sudo apt update
+```
+```
+sudo apt update
+```
+sudo apt install remoteit -y
 ```
 
 > SSH/VNC Activation
@@ -36,6 +41,7 @@ sudo raspi-config
 ```
 hostname -I
 ```
+
 In caso di problemi nella connessione SSH
 > SSH Re-Build Key
 ```
@@ -49,4 +55,16 @@ sudo adduser <nomeutente>
 > Cancellazione utenti Raspberry
 ```
 sudo userdel-r <nomeutente>
+```
+> Copiare una dir da un percorso ad un altro 
+```
+sudo cp -r pathorigin pathdestination 
+```
+> Cancellare una dir 
+```
+sudo rm -mf -r pathorigin pathdestination 
+```
+> Rinominare dir e file
+```
+sudo mv  pathorigin/nomefile pathdestination/nomeifle
 ```
