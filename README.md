@@ -26,8 +26,6 @@ sudo apt-get install realvnc-vnc-viewer
 sudo apt update
 ```
 ```
-sudo apt update
-```
 sudo apt install remoteit -y
 ```
 
