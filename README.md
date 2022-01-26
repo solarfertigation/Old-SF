@@ -28,6 +28,7 @@ sudo apt update
 ```
 sudo apt install remoteit -y
 ```
+[Device Scanner] - (http://find.remote.it/)
 
 > SSH/VNC Activation
 ```
