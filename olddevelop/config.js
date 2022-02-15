@@ -19,8 +19,14 @@ try {
         //gpios configuration,
         zones: [23,24,25],
         ferts: [18,12,16],
+        // newferts: [17,27,22],
+        // mix: 18,
         recirc: 20,
+        // ev_venturi: 13
         water_pump: 21
+        // water_pump: 23
+        // ev: [19,26,12,16,20,21]
+        // ava: [04,24,25,06]
     }
     
 } catch (error) {
