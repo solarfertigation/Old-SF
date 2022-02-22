@@ -19,12 +19,12 @@ try {
         //gpios configuration,
         zones: [23,24,25],
         ferts: [17,27,22],
-        // newferts: [18,12,16],
+        // oldferts: [18,12,16],
         // mix: 18,
         recirc: 13,
         // old_recirc: 20
         water_pump: 23
-        // water_pump: 21
+        // old_water_pump: 21
         // ev: [19,26,12,16,20,21]
         // ava: [04,24,25,06]
     }
