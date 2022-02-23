@@ -30,6 +30,16 @@ sudo apt install remoteit -y
 ```
 [Device Scanner] - (http://find.remote.it/)
 
+
+> Install Nmap - Discover Raspy IP Address on LAN/WLAN
+```
+sudo apt update
+```
+```
+sudo apt install -y nmap
+```
+
+
 > SSH/VNC Activation
 ```
 sudo raspi-config
