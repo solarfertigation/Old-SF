@@ -10,8 +10,8 @@ sudo pip install flask
 
 > Create Python App 
 ```
-mkdir web-server
-cd web-server
+mkdir sf-webserver
+cd sf-webserver
 nano app.py
 ```
 
