@@ -12,12 +12,13 @@ sudo pip install flask
 ```
 mkdir sf-webserver
 cd sf-webserver
-nano app.py
+touch app.py
+touch sfwebserver.service
 ```
 
 > Create HTML Page
 ```
 mkdir templates
 cd templates
-nano main.html
+touch main.html
 ```
