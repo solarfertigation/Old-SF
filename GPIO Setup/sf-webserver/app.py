@@ -9,10 +9,10 @@ pins = {
    12 : {'name' : 'EV1', 'state' : GPIO.LOW},
    16 : {'name' : 'EV2', 'state' : GPIO.LOW},
    18 : {'name' : 'EV3', 'state' : GPIO.LOW},
-   20 : {'name' : 'EV4', 'state' : GPIO.LOW},
-   21 : {'name' : 'Fert1', 'state' : GPIO.LOW},
-   23 : {'name' : 'Fert2', 'state' : GPIO.LOW},
-   24 : {'name' : 'Fert3', 'state' : GPIO.LOW},
+   20 : {'name' : 'Fert1', 'state' : GPIO.LOW},
+   21 : {'name' : 'Fert2', 'state' : GPIO.LOW},
+   23 : {'name' : 'Fert3', 'state' : GPIO.LOW},
+   24 : {'name' : 'Ricircolo', 'state' : GPIO.LOW},
    25 : {'name' : 'Pompa', 'state' : GPIO.LOW}
    }
 
