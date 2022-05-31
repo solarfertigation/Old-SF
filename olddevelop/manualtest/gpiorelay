@@ -1,12 +1,10 @@
-  zoneGpio = {
-    Zone0: 18,
-    Zone1: 23,
-    Zone2: 24,
-    Zone3: 25,
-    Zone4: 12,
-    Zone5: 16,
-    Zone6: 20,
-    Zone7: 21,
-    Zone8: 4,
-    Zone9: 17,
-  }
+ zoneGpio = {
+    Zone0: 12,
+    Zone1: 16,
+    Zone2: 18,
+    Zone3: 20,
+    Zone4: 21,
+    Zone5: 23,
+    Zone6: 24,
+    Zone7: 25,
+}
