@@ -5,8 +5,7 @@ var macaddress = require('macaddress');
 
 try {
         //global settings,
-        hash: '';
-        hash: md5(hostname),
+        hash: 'inserire l'hostname del Raspberry in formato MD5',
         //mqtt configuration,
         kalive: 200,
         user: "alessandro",
