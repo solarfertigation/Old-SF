@@ -2,13 +2,10 @@ const dotenv = require('dotenv');
 dotenv.config();
 var md5 = require('md5');
 var macaddress = require('macaddress');
-var os = require("os");
-var hostname = os.hostname();
 
 try {
-    var macadd = macaddress.networkInterfaces()["eth0"]["mac"]
-    module.exports = {
         //global settings,
+        hash: '';
         hash: md5(hostname),
         //mqtt configuration,
         kalive: 200,
