@@ -9,3 +9,8 @@
 - https://solarfertigation-admin.web.app/auth/login
 - Username: roule
 - Password: password 
+
+> Login User
+- https://app.solarfertigation.com/auth/login
+- Username: 
+- Password: 
