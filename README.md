@@ -69,9 +69,17 @@ sudo userdel-r <nomeutente>
 ```
 sudo cp -r pathorigin pathdestination 
 ```
+> Creare una dir 
+```
+sudo mkdir <nomecartella>
+```
 > Cancellare una dir 
 ```
 sudo rm -rf  pathorigin pathdestination 
+```
+> Creare nuovo file  
+```
+sudo touch <nomefile>
 ```
 > Rinominare dir e file
 ```
