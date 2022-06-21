@@ -38,14 +38,14 @@ sudo apt-get install git -y
 ```
 git --version
 ```
-> 5. Install Nmap - Discover Raspy IP Address on LAN/WLAN
+> 6. Install Nmap - Discover Raspy IP Address on LAN/WLAN
 ```
 sudo apt update
 ```
 ```
 sudo apt install -y nmap
 ```
-> 6. Controllo Desktop Remoto: Install RealVNC Server/Viewer
+> 7. Controllo Desktop Remoto: Install RealVNC Server/Viewer
 - SSH/VNC Activation
 ```
 sudo raspi-config
@@ -56,7 +56,7 @@ sudo apt-get update
 sudo apt-get install realvnc-vnc-server
 sudo apt-get install realvnc-vnc-viewer
 ```
-> 7. Controllo Remoto via SSH: Install Remote.it
+> 8. Controllo Remoto via SSH: Install Remote.it
 ```
 sudo apt update
 ```

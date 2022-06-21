@@ -1,6 +1,6 @@
 # Heroku Auth 
 
-> Admin Panel
+> Backend Admin Panel
 - http://solarfertigation-web-service.herokuapp.com/admin/
 - Username: roule
 - Password: password 
