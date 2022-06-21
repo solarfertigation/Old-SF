@@ -18,13 +18,13 @@ default hostname: pi | password: raspberry
 sudo apt-get update -y && sudo apt-get upgrade -y
 ```
 > 3. Cambiare Hostname e Password
-Entrare in 1.System Options 
+- Entrare in 1.System Options 
 ```
 sudo raspi-config
 ```
 > 4. Install NodeJS
 ```
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt-get install -y nodejs
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs
 ```
 - Versione di NodeJS installata
 ```
