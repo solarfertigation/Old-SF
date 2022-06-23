@@ -66,6 +66,10 @@ sudo apt install remoteit -y
 [Device Scanner] - (http://find.remote.it/)
 
 
+# Cloning Repository SolarFertigation
+```
+git clone https://github.com/solarfertigation/sf-old.git
+```
 
 
 > Install Nmap - Discover Raspy IP Address on LAN/WLAN
