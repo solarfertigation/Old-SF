@@ -26,6 +26,17 @@ sudo raspi-config
 ```
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs
 ```
+- Alternative NodeJS Installation Method for ARM61
+```
+wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-armv6l.tar.xz | wget https://nodejs.org/dist/v11.9.0/node-v11.9.0-linux-armv6l.tar.xz
+tar xvf node-v10.15.3-linux-armv6l.tar.xz | tar xvf node-v11.9.0-linux-armv6l.tar.xz
+cd node-v10.15.3-linux-armv6l | cd node-v11.9.0-linux-armv6l
+sudo cp -R bin/* /usr/bin/
+sudo cp -R lib/* /usr/lib/
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install build-essential
+```
+
 - Versione di NodeJS installata
 ```
 node -v

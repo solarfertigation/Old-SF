@@ -1,3 +1,20 @@
+# Install Flask
+```
+sudo apt-get upgrade
+sudo apt-get upgrade
+sudo apt-get install python-pip python-flask
+sudo pip install flask
+```
+
+```
+cd /home/pi/sf-old
+mkdir sfwebserver
+cd sfwebserver
+sudo touch app.py
+mkdir templates
+cd templates
+sudo touch main.html
+```
 # Add SF WebServer Service on Boot 
 
 > Copy Service on dir System
