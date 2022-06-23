@@ -4,6 +4,7 @@ var md5 = require('md5');
 var macaddress = require('macaddress');
 
 try {
+    module.exports = {
         //global settings,
         hash: 'inserire l'hostname del Raspberry in formato MD5',
         //mqtt configuration,
