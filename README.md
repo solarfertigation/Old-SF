@@ -1,9 +1,21 @@
-# Repo Dev - Heroku Cloud SolarFertigation 
+# Heroku Auth 
 
-[Create New User] (https://solarfertigation-admin.web.app/auth/login)
+> Backend Admin Panel
+- http://solarfertigation-web-service.herokuapp.com/admin/
+- Username: roule
+- Password: password 
 
-[Backend Admin] (https://solarfertigation-web-service.herokuapp.com/admin)
+> Create New User
+- https://solarfertigation-admin.web.app/auth/login
+- Username: roule
+- Password: password 
 
+> Login User
+- https://app.solarfertigation.com/auth/login
+- Username: 
+- Password: 
+
+# Heroku Manage Backend Code
 
 > Install NPM Heroku 
 ```
