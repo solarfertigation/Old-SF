@@ -42,7 +42,7 @@ cd home/pi/sf-old/olddevelop
 sudo nano config.js
 ```
 ```
-hash: 'raspberry macaddress in formato MD5'
+hash: 'raspberry macaddress in formato MD5' (http://www.md5.cz)
 user: "user mqtt (https://api.cloudmqtt.com/console/82661046/details)"
 pass: "password mqtt (https://api.cloudmqtt.com/console/82661046/details)" 
 ```
