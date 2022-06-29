@@ -10,7 +10,7 @@
 
 > 1. SSH Connection
 ```
-ssh <yourhostmane>@<youripaddress>
+sudo ssh <raspberrydefaultuser>@<raspberryipaddress>
 default hostname: pi | password: raspberry
 ```
 > 2. Aggiornamento lista e pacchetti 
