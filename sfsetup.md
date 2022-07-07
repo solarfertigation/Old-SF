@@ -9,7 +9,7 @@ sudo npm i forever -g
 ```
 > Finish Installation
 ```
-cd sf-old
+cd olddevelop
 npm i
 ```
 > Create Dir Forevor Logs
