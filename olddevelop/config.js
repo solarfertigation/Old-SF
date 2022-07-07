@@ -9,7 +9,7 @@ try {
     var macadd = macaddress.networkInterfaces()["eth0"]["mac"]
     module.exports = {
       //global settings,
-        hash: 'inserire l'hostname del Raspberry in formato MD5',
+        hash: 'inserire il MacAddress del Raspberry in formato MD5',
         //mqtt configuration,
         kalive: 200,
         user: "https://api.cloudmqtt.com/console/82661046/details",
