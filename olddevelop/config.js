@@ -2,10 +2,13 @@ const dotenv = require('dotenv');
 dotenv.config();
 var md5 = require('md5');
 var macaddress = require('macaddress');
+var os = require("os");
+var hostname = os.hostname();
 
 try {
+    var macadd = macaddress.networkInterfaces()["eth0"]["mac"]
     module.exports = {
-        //global settings,
+      //global settings,
         hash: 'inserire l'hostname del Raspberry in formato MD5',
         //mqtt configuration,
         kalive: 200,
@@ -18,10 +21,10 @@ try {
         ferts: [12,16,18],
         recirc: 20,
         water_pump: 21,
-    }
-    
-} catch (error) {
+        }   
+    }           
+    catch (error) {
     console.log("errore, di seguito le interfacce disponibili")
     console.log(macaddress.networkInterfaces())
     throw error.message
-}
+    }
