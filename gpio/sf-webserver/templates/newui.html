@@ -29,9 +29,9 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="main.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url_for('templates', filename='newui.html') }}">
                 
-                    <img src="css/logo/Logo_SolarFertigation.png" alt="SolarFertigation" title="SolarFertigation"/>
+                    <img src="{{ url_for('static', filename='css/logo/Logo_SolarFertigation.png') }}" alt="SolarFertigation" title="SolarFertigation"/>
                 
                 
             </a>
@@ -45,7 +45,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item">
-                <a class="nav-link" href="newui.html">
+                <a class="nav-link" href="{{ url_for('templates', filename='newui.html') }}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Test Manuali</span></a>
             </li>
@@ -93,112 +93,52 @@
                                         <tr>
                                             <th>Device</th>
                                             <th>Stato</th>
+                                            <th>Controlla</th>
                                             
                                         </tr>
                                     </thead>
                                     <tfoot>
-                                        <tr>
- 
-                                            <th>Device</th>
-                                            <th>Stato</th>
-                                           
-                                        </tr>
+                        
                                     </tfoot>
                                     <tbody>
                                            <tr>
- 
-                                        <tr>
-                                              <td>{{ pins[12].name }}</td>
-                                            <td>
-                                                <!-- Checked switch -->
-                                                <label class="switch">
-                                                    <input href="/{{12}}/off" href="/{{12}}/on" type="checkbox">
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                            </td>
 
-                                        </tr>
-                                        <tr>
-                                            <td>{{ pins[16].name }}</td>
-                                            <td>
-                                                <!-- Checked switch -->
-                                                <label class="switch">
-                                                    <input href="/{{16}}/off" href="/{{16}}/on" type="checkbox">                                                    
-                                                    <span class="slider round"></span>
-                                                  </label>
+                                            <tr>
+                                            {% for pin in pins %}
+                                            <td>{{ pins[pin].name }}</td>
+                                            <td>{% if pins[pin].state == true %}
+                                                è attualmente <strong>Acceso</strong>
+                                            {% else %}
+                                                è attualmente <strong>Spento</strong>
+                                            {% endif %}
                                             </td>
+                                            <td>{% if pins[pin].state == true %}
+                                            <label class="switch">
+                                                <input href="/{{pin}}/off" type="checkbox">
+                                                <span class="slider round"></span>
+                                                {% else %}
+                                                <input href="/{{pin}}/on" type="checkbox">
+                                                <span class="slider round"></span>
+                                                </label>
+                                            {% endif %}
+                                            </td>
+                                            {% endfor %}
+                                            </tr>
 
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>{{ pins[18].name }}</td>
-                                            <td>
-                                                <!-- Checked switch -->
-                                                <label class="switch">
-                                                    <input href="/{{18}}/off" href="/{{18}}/on" type="checkbox">                                                    
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>{{ pins[20].name }}</td>
-                                            <td>
-                                                <!-- Checked switch -->
-                                                <label class="switch">
-                                                    <input href="/{{20}}/off" href="/{{20}}/on" type="checkbox">                                                    
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>{{ pins[21].name }}</td>
-                                            <td>
-                                                <!-- Checked switch -->
-                                                <label class="switch">
-                                                    <input href="/{{21}}/off" href="/{{21}}/on" type="checkbox">                                                    
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>{{ pins[23].name }}</td>
-                                            <td>
-                                                <!-- Checked switch -->
-                                                <label class="switch">
-                                                    <input href="/{{23}}/off" href="/{{23}}/on" type="checkbox">                                                    
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>{{ pins[24].name }}</td>
-                                            <td>
-                                                <!-- Checked switch -->
-                                                <label class="switch">
-                                                    <input href="/{{24}}/off" href="/{{24}}/on" type="checkbox">                                                    
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                            </td>
-                                            
-                                        </tr>
-
-                                         <tr>
-                                            <td>{{ pins[25].name }}</td>
-                                            <td>
-                                                <!-- Checked switch -->
-    
-                                                <label class="switch">
-                                                    <input href="/{{25}}/off" href="/{{25}}/on" type="checkbox">                                                    
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                            </td>
-                                            
-                                        </tr>
-                                                             
+                                            <tr>
+                                                <td>{{ pins[12].name }}</td>
+                                                <td>{{ pins[12].state }}</td>
+                                                <td>
+                                                    <!-- Checked switch -->
+        
+                                                    <label class="switch">
+                                                        <input href="/{{12}}/on" type="checkbox"> 
+                                                        <input href="/{{12}}/off" type="checkbox">                                          
+                                                        <span class="slider round"></span>
+                                                      </label>
+                                                </td>
+                                            </tr> 
+                                        
                                     </tbody>
                                 </table>
                             </div>
