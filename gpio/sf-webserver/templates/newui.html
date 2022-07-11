@@ -78,7 +78,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Test manuali</h1>
+                    <h1 class="h3 mb-2 text-gray-800">SolarFertigation Machine# - Test Manuali</h1>
                    
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -103,31 +103,29 @@
                                     <tbody>
                                            <tr>
 
-                                            <tr>
                                             {% for pin in pins %}
+                                            <tr>
                                             <td>{{ pins[pin].name }}</td>
                                             <td>{% if pins[pin].state == true %}
-                                                <strong>Acceso</strong>
-                                            {% else %}
-                                               <strong>Spento</strong>
-                                            {% endif %}
-                                            </td>
+                                            <strong>Acceso</strong></td>
                                             <td>
-                                            {% if pins[pin].state == true %}
+                                                <label class="switch">
+                                                    <a href="/{{pin}}/off" <input type="checkbox">
+                                                    <span class="slider round"></span></label>
+                                                    </a>
+                                            </td>
+                                            <td>{% else %}
+                                            <strong>Spento</strong></td>
+                                                <td>
                                             <label class="switch">
-                                                <input href="/{{pin}}/off" type="checkbox">
-                                                <span class="slider round"></span></label>
+                                                <a href="/{{pin}}/on" <input type="checkbox">
+                                                    <span class="slider round"></span></label>
+                                                    </a>
                                             </td>
-                                            <td>
-                                            {% else %}
-                                                <input href="/{{pin}}/on" type="checkbox">
-                                                <span class="slider round"></span>
-                                                </label>
-                                            </td>
-                                            {% endfor %}
                                             {% endif %}
                                             </tr>
-                                        
+                                            {% endfor %}
+
                                     </tbody>
                                 </table>
                             </div>
