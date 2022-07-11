@@ -2,7 +2,7 @@
 ```
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install python-pip python-flask
+sudo apt-get install python3-pip python3-flask
 sudo pip install flask
 ```
 
