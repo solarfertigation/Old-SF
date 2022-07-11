@@ -92,8 +92,7 @@
                                     <thead>
                                         <tr>
                                             <th>Device</th>
-                                            <th>Stato</th>
-                                            <th>Controlla</th>
+                                            <th>Stato/Controlla</th>
                                             
                                         </tr>
                                     </thead>
@@ -104,28 +103,17 @@
                                            <tr>
 
                                             <tr>
-                                            {% for pin in pins %}
-                                            <td>{{ pins[pin].name }}</td>
-                                            <td>{% if pins[pin].state == true %}
-                                                <strong>Acceso</strong>
-                                            {% else %}
-                                               <strong>Spento</strong>
-                                            {% endif %}
-                                            </td>
-                                            <td>
-                                            {% if pins[pin].state == true %}
-                                            <label class="switch">
-                                                <input href="/{{pin}}/off" type="checkbox">
-                                                <span class="slider round"></span></label>
-                                            </td>
-                                            <td>
-                                            {% else %}
-                                                <input href="/{{pin}}/on" type="checkbox">
-                                                <span class="slider round"></span>
-                                                </label>
-                                            </td>
-                                            {% endfor %}
-                                            {% endif %}
+                                                    {% for pin in pins %}
+                                                    <td>{{ pins[pin].name }}</td>
+                                                    <td>{% if pins[pin].state == true %}
+                                                       <strong>Acceso</strong></h2><div class="row"><div class="col-md-2">
+                                                       <a href="/{{pin}}/off" class="btn btn-block btn-lg btn-default" role="button">Spegni</a></div></div>
+                                                    {% else %}
+                                                    <strong>Spento</strong></h2><div class="row"><div class="col-md-2">
+                                                       <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button">Accendi</a></div></div>
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                    </td>
                                             </tr>
                                         
                                     </tbody>
