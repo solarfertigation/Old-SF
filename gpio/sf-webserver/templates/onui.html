@@ -78,7 +78,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Test manuali</h1>
+                    <h1 class="h3 mb-2 text-gray-800">SolarFertigation Machine# - Test Manuali</h1>
                    
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -92,7 +92,8 @@
                                     <thead>
                                         <tr>
                                             <th>Device</th>
-                                            <th>Stato/Controlla</th>
+                                            <th>Stato</th
+                                            <th>Controlla</th
                                             
                                         </tr>
                                     </thead>
@@ -102,20 +103,21 @@
                                     <tbody>
                                            <tr>
 
+                                            {% for pin in pins %}
                                             <tr>
-                                                    {% for pin in pins %}
-                                                    <td>{{ pins[pin].name }}</td>
-                                                    <td>{% if pins[pin].state == true %}
-                                                       <strong>Acceso</strong></h2><div class="row"><div class="col-md-2">
-                                                       <a href="/{{pin}}/off" class="btn btn-block btn-lg btn-default" role="button">Spegni</a></div></div>
-                                                    {% else %}
-                                                    <strong>Spento</strong></h2><div class="row"><div class="col-md-2">
-                                                       <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button">Accendi</a></div></div>
-                                                    {% endif %}
-                                                    {% endfor %}
-                                                    </td>
+                                            <td>{{ pins[pin].name }}</td>
+                                            <td>{% if pins[pin].state == true %}
+                                            <strong>Acceso</strong></td>
+                                               <td><a href="/{{pin}}/off" class="btn btn-block btn-lg btn-default" role="button">Spegni</a>
+                                            </td>
+                                            <td>{% else %}
+                                            <strong>Spento</strong></td>
+                                               <td><a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button">Accendi</a>
+                                            </td>
+                                            {% endif %}
                                             </tr>
-                                        
+                                            {% endfor %}
+                                            
                                     </tbody>
                                 </table>
                             </div>
