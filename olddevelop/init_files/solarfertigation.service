@@ -1,5 +1,5 @@
 [Unit]
-Description=solarfertigation Service
+Description=SolarFertigation Service
 After=multi-user.target
 
 [Service]
